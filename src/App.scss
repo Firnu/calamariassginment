@@ -1,0 +1,80 @@
+@import "./Consts.scss";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+
+html,
+body,
+main,
+#root {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+}
+
+html {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body {
+    background-color: $bg-color;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input,
+textarea,
+button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 95%;
+    height: 100%;
+    max-width: 1385px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.children-center {
+    align-items: center;
+}
+
+.bold {
+    font-weight: 600;
+}

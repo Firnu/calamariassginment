@@ -1,0 +1,32 @@
+@import "/src/Consts.scss";
+
+.stars-container {
+    display: flex;
+    flex-direction: row;
+    width: 172px;
+    height: 28px;
+    gap: 8px;
+    border: none;
+
+    .star {
+        display: block;
+        width: 28px;
+        height: 28px;
+        border-radius: 4px;
+        background: url("/src/assets/imgs/star-gray.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: $secondary-color;
+        border: none;
+        transform: scale(1);
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &.selected {
+            background: url("/src/assets/imgs/star-active.png");
+        }
+    }
+}
+

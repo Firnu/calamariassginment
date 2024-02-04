@@ -1,0 +1,76 @@
+@import "/src/Consts.scss";
+
+$tab-button-border: 1px solid $secondary-color;
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: $desktop-size) {
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .tab-button {
+        padding: 0;
+        width: 80%;
+        height: 50px;
+        background: none;
+        background-color: transparent;
+        border: $tab-button-border;
+        border-radius: 0px;
+        color: $secondary-color;
+        font-size: 14px;
+        font-weight: 400;
+
+        @media screen and (min-width: $desktop-size) {
+            width: 200px;
+        }
+
+        &:first-child {
+            border-radius: 4px 4px 0px 0px;
+
+            @media screen and (min-width: $desktop-size) {
+                border-radius: 4px 0px 0px 4px;
+            }
+        }
+
+        &:last-child {
+            border-radius: 0px 0px 4px 4px;
+
+            @media screen and (min-width: $desktop-size) {
+                border-radius: 0px 4px 4px 0px;
+            }
+        }
+
+        &.selected {
+            background-color: $primary-color;
+            color: white;
+            font-weight: 600;
+            box-shadow: $shadow-color 0 10px 16px;
+
+            &:hover {
+                color: white;
+            }
+        }
+
+        &:not(:last-child) {
+            border-bottom: 0;
+            border-right: $tab-button-border;
+
+            @media screen and (min-width: $desktop-size) {
+                border-bottom: $tab-button-border;
+                border-right: 0;
+            }
+        }
+
+        &:hover {
+            color: $primary-color;
+            cursor: pointer;
+        }
+    }
+}

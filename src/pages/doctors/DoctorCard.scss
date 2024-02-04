@@ -1,0 +1,225 @@
+@import "/src/Consts.scss";
+
+$tab-button-border: 1px solid $secondary-color-light;
+
+.icon-button {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    mask-repeat: no-repeat;
+    mask-position: center;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .icon {
+        width: 100%;
+        height: 100%;
+        background-color: $secondary-color;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 0;
+        mask-repeat: no-repeat;
+        mask-position: center;
+
+        &:hover {
+            background-color: $primary-color;
+            cursor: pointer;
+        }
+    }
+
+    &.secondary-on-hover {
+        border-radius: 4px;
+        transition: background-color 0.1s linear;
+        
+        &:hover {
+            background-color: $secondary-color-light;
+            transition: background-color 0.1s linear;
+        }
+    }
+
+    .more-button {
+        mask-image: url("/src/assets/imgs/hamburger.png");
+    }
+
+    .heart-button {
+        mask-image: url("/src/assets/imgs/heart.png");
+
+        &.activated {
+            background-color: $primary-color;
+        }    
+    }
+
+    .bell-button {
+        mask-image: url("/src/assets/imgs/bell.svg");
+    }
+
+    .calendar-button {
+        mask-image: url("/src/assets/imgs/calendar.svg");
+    }
+
+    .mail-button {
+        mask-image: url("/src/assets/imgs/mail.svg");
+    }
+}
+
+.kick-on-click {
+    transform: scale(1.0);
+
+    &:active {
+        transform: scale(1.1);
+    }
+}
+
+.doctor-card {
+    padding-top: 13px;
+    width: 323px;
+    min-width: 323px;
+    height: 441px;
+    background-color: white;
+    box-shadow: $shadow-color 0 3px 16px;
+    border-radius: 4px;
+}
+
+.top-buttons-container {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .top-button {
+        width: 40px;
+        height: 32px;
+    }
+}
+
+.avatar-container {
+    .doctor-pic-background {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 24px;
+        border-radius: 50px;
+        background-color: $primary-color-light;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .avatar {
+            width: 100%;
+            height: 100%;
+            border-radius: 50px;
+            display: block;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100px 100px;
+        }
+
+        .initials {
+            font-size: 24px;
+            font-weight: 600;
+            color: $primary-color;
+        }
+    }
+
+    .name-label {
+        font-weight: 600;
+        font-size: 19px;
+        margin-bottom: 11px;
+    }
+
+    .specialization-label {
+        color: $secondary-color;
+        font-weight: 400;
+        font-size: 14px;
+    }
+}
+
+.middle-buttons-container {
+    display: flex;
+    flex-direction: row;
+    height: 44px;
+
+    .middle-button {
+        display: flex;
+        flex-grow: 1;
+        border-bottom: 1px solid $secondary-color-light;
+
+        &:hover {
+            border-bottom: 1px solid $primary-color;
+        }
+    }
+}
+
+.rating-container {
+    height: 55px;
+    padding: 22px 33px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .average-rating {
+        font-weight: 600;
+        color: black;
+        font-size: 30px;
+    }
+
+    .rating-counter {
+        font-weight: 400;
+        font-size: 12px;
+        color: $secondary-color;
+    }
+}
+
+.bottom-buttons-container {
+    height: 60px;
+
+    .bottom-button {
+        width: 50%;
+        background-color: transparent;
+        color: $secondary-color;
+        border: 0;
+        font-size: 12px;
+        font-weight: 400;
+        border-top: $tab-button-border;
+        border-right: $tab-button-border;
+        transition: background-color 0.1s linear;
+
+        &:hover {
+            background-color: $primary-color;
+            font-weight: 600;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.1s linear;
+        }
+
+        span {
+            display: inline-block;
+            transform: scale(1);
+        }
+
+        &:active {
+            span {
+                display: inline-block;
+                transform: scale(1.05);
+            }
+        }
+
+        &:first-child {
+            border-bottom-left-radius: 4px;
+        }
+
+        &:last-child {
+            border-bottom-right-radius: 4px;
+        }
+
+        &:not(:first-child) {
+            border-right: 0;
+        }
+    }
+}

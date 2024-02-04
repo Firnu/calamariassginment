@@ -1,0 +1,52 @@
+@import "/src/Consts.scss";
+
+#search-field {
+    width: 56px;
+    height: 50px;
+    padding-top: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url("/src/assets/imgs/ic-search.png") transparent;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 8px;
+
+    padding-left: 31px;
+    border: none;
+    line-height: normal;
+    
+    font-size: 14px;
+    font-weight: 400;
+
+    outline-width: 0;
+    transition: width 0.15s ease-in, height 0.15s ease-in;
+
+    &::placeholder {
+        color: $secondary-color;
+    }
+
+    @media screen and (min-width: $desktop-size) {
+        margin-left: auto;
+        margin-right: 0;
+        height: 20px;
+    }
+
+    &:focus {
+        width: 250px;
+        height: 50px;
+        border: 0;
+        transition: width 0.15s ease-out, height 0.15 ease-out;
+
+        background: url("/src/assets/imgs/ic-search.png") white;
+        background-repeat: no-repeat;
+        background-position: left;
+        background-position-x: 8px;
+    
+        box-shadow: $shadow-color 0 3px 16px 0;
+
+        @media screen and (min-width: $desktop-size-large) {
+            width: 316px;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@import "/src/Consts.scss";
+
+.list-row {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
