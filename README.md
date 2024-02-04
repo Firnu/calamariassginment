@@ -3,7 +3,7 @@ Recruitment assignment for Calamari company.
 Running the project:
 1. Navigate to a folder using CLI.
 2. git clone https://github.com/Firnu/calamariassignment.git
-3. cd calamariassginment
+3. cd calamariassignment
 4. git pull
 5. npm install
 6. npm run dev
