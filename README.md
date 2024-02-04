@@ -19,3 +19,10 @@ Some information:
   - 50% of having an avatar,
   - 70% chance of already having votes (from 0 to 150) with random rating
   - 0.5% of already being chosen as favorite
+
+Tech stack:
+- React
+- Redux
+- Webpack
+- Tanstack Virtual
+- Jest (with React Testing Library)
