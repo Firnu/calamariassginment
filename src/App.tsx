@@ -1,5 +1,5 @@
 import React from "react"
-import "./app.scss";
+import "./App.scss";
 import { Provider } from "react-redux";
 import { DoctorsPage } from "./pages/doctors/DoctorsPage";
 import { store } from "./redux/store";

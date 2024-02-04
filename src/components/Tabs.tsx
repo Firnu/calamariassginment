@@ -1,6 +1,6 @@
 import React from "react";
 import { useTabs } from "./Tabs.hook";
-import "./tabs.scss";
+import "./Tabs.scss";
 
 export type Tab = {
     id: string,

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { AppDispatch } from "../../redux/store";
 import { setFilters } from "../../redux/doctors/doctor.slice";
-import "./doctorssearchinput.scss";
+import "./DoctorsSearchInput.scss";
 import { useDebouncedCallback } from "../../hooks/useDebouncedCallback";
 
 export function DoctorsSearchInput() {

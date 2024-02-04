@@ -1,6 +1,7 @@
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 
 module.exports = {
     entry: './src/index.tsx',
@@ -31,6 +32,7 @@ module.exports = {
         minimizer: [
             '...',
             new CssMinimizerPlugin(),
+            new CaseSensitivePathsPlugin(),
         ],
     },
     resolve: {

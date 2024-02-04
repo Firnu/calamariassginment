@@ -1,5 +1,5 @@
 import React from "react";
-import "./doctorspage.scss";
+import "./DoctorsPage.scss";
 import { Tabs } from "../../components/Tabs";
 import { DoctorsSearchInput } from "./DoctorsSearchInput";
 import { DoctorsList } from "./DoctorsList";
