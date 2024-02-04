@@ -2,7 +2,7 @@ import { VirtualItem } from "@tanstack/react-virtual";
 import React from "react";
 import { DoctorCard } from "./DoctorCard";
 import { useDoctorList } from "./DoctorList.hook";
-import "./DoctorsList.scss"
+import "./doctorslist.scss"
 
 export function DoctorsList() {
     const {

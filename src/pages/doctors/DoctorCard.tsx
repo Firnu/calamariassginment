@@ -1,5 +1,5 @@
 import React, { HTMLAttributes } from "react";
-import "./DoctorCard.scss";
+import "./doctorcard.scss";
 import { RatingStars } from "../../components/RatingStars";
 import { useDoctorCard } from "./DoctorCard.hook";
 

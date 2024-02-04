@@ -1,6 +1,6 @@
 import React from "react";
 import { useRatingStars } from "./RatingStars.hook";
-import "./RatingStars.scss";
+import "./ratingstars.scss";
 
 type RatingStarsProps = {
     initialValue: number | null;
