@@ -10,31 +10,21 @@ module.exports = {
     },
     module: {
         rules: [
-            {
+               {
                 test: /\.s[ac]ss$/i,
                 use: [
-                    {
-                        loader: 'style-loader'
-                    },
-                    {
-                        loader: 'css-loader',
-                    },
-                    {
-                        loader: 'resolve-url-loader',
-                    },
-                    {
-                        loader: 'sass-loader',
-                        options: {
-                            sourceMap: true,
-                        }
-                    }
+                    "style-loader",
+                    "css-loader",
+                    "sass-loader",
                 ],
+                sideEffects: true
             },
             {
                 test: /^(?!.*\.test\.(ts|tsx)?$).*\.(js|jsx|ts|tsx)$/,
                 exclude: /node_modules/,
                 use: 'ts-loader',
             },
+         
         ]
     },
     optimization: {
@@ -44,7 +34,7 @@ module.exports = {
         ],
     },
     resolve: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx', '.scss'],
     },
     plugins: [
         new CopyWebpackPlugin({
