@@ -20,6 +20,16 @@
         border: none;
         transform: scale(1);
 
+        &:after {
+            // preloading image in the background to avoid flicker on the first click
+            position: absolute;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            z-index: -1;
+            content: url("/src/assets/imgs/star-active.png");
+        }
+
         &:hover {
             cursor: pointer;
         }
@@ -29,4 +39,3 @@
         }
     }
 }
-
