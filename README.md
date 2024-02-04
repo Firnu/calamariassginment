@@ -11,6 +11,8 @@ Running the project:
 
 To run tests: npm run test
 
+See the app here: https://6ee3967b.calamariassignment.pages.dev/
+
 Some information:
 - Data is not persistent. Every time app resets, there will be a new data.
 - 5000 doctors are generated with:
