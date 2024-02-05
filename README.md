@@ -26,3 +26,8 @@ Tech stack:
 - Webpack
 - Tanstack Virtual
 - Jest (with React Testing Library)
+
+Functionality:
+- Pressing the heart icon will add/remove doctors from My Favorites list.
+- Pressing one of the stars will set a rating for the doctor, updating the rating count and average.
+- Other buttons on a doctor card are outputing console log info about the clicked element (no functionality beside that).
