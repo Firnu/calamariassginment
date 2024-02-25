@@ -8,7 +8,7 @@ import { useEffect } from "react";
  */
 export function useDebouncedCallback<T>(value: T, callback: () => void, delayMs?: number) {
     useEffect(() => {
-        const timeout = setTimeout(()=>{
+        const timeout = setTimeout(() => {
             callback();
         }, delayMs ?? 500);
 

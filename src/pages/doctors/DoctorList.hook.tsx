@@ -53,7 +53,7 @@ export function useDoctorList() {
     const virtualizer = useWindowVirtualizer({
         count: rowCount,
         estimateSize: () => itemHeight + layoutData.rowGap,
-        overscan: 1,
+        overscan: 2,
     });
 
     return { filteredDoctors, listContainerRef, virtualizer, layoutData };
