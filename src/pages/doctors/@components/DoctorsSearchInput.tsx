@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { AppDispatch } from "../../redux/store";
-import { setFilters } from "../../redux/doctors/doctor.slice";
+import { AppDispatch } from "../../../redux/store";
+import { setFilters } from "../../../redux/doctors/doctor.slice";
 import "./DoctorsSearchInput.scss";
-import { useDebouncedCallback } from "../../hooks/useDebouncedCallback";
+import { useDebouncedCallback } from "../../../hooks/useDebouncedCallback";
 
 export function DoctorsSearchInput() {
     const [search, setSearch] = useState<string>("");

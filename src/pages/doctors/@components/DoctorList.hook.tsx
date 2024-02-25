@@ -1,8 +1,8 @@
 import { useWindowVirtualizer } from "@tanstack/react-virtual";
 import { useRef } from "react";
 import { useSelector } from "react-redux";
-import { useScreen } from "../../hooks/useScreen";
-import { AppRootState } from "../../redux/store";
+import { useScreen } from "../../../hooks/useScreen";
+import { AppRootState } from "../../../redux/store";
 
 export type VirtualizedLayoutData = {
     columnGap: number,

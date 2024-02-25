@@ -1,8 +1,8 @@
 import React from "react";
 import "./DoctorsPage.scss";
 import { Tabs } from "../../components/Tabs";
-import { DoctorsSearchInput } from "./DoctorsSearchInput";
-import { DoctorsList } from "./DoctorsList";
+import { DoctorsSearchInput } from "./@components/DoctorsSearchInput";
+import { DoctorsList } from "./@components/DoctorsList";
 import { useDoctorsPage } from "./DoctorsPage.hook";
 
 export function DoctorsPage() {

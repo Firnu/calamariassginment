@@ -1,6 +1,6 @@
 import React, { HTMLAttributes } from "react";
 import "./DoctorCard.scss";
-import { RatingStars } from "../../components/RatingStars";
+import { RatingStars } from "../../../components/RatingStars";
 import { useDoctorCard } from "./DoctorCard.hook";
 
 interface DoctorCardProps extends HTMLAttributes<React.ReactNode> {

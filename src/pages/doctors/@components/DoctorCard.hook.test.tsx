@@ -1,5 +1,5 @@
 import { act, renderHook } from "@testing-library/react";
-import { Wrapper } from "../../utils/test.utils";
+import { Wrapper } from "../../../utils/test.utils";
 import { useDoctorCard } from "./DoctorCard.hook";
 
 describe("Doctor card hooks", () => {

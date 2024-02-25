@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
-import { rateDoctor, toggleFavorite } from "../../redux/doctors/doctor.slice";
-import { AppDispatch, AppRootState } from "../../redux/store";
+import { rateDoctor, toggleFavorite } from "../../../redux/doctors/doctor.slice";
+import { AppDispatch, AppRootState } from "../../../redux/store";
 
 export function useDoctorCard(doctorId: number) {
     const doctor = useSelector((state: AppRootState) =>
